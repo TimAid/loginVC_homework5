@@ -78,16 +78,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: Navigation
-    
-//    // MARK: Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let tabBarController = segue.destination as! UITabBarController
-//        let welcomeVC = tabBarController.viewControllers?.first as! WelcomeViewController
-//        let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
-//        let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
-//        welcomeVC.user = user
-//        aboutUserVC.user = user
-//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "createAccount" else {
             let tabBarController = segue.destination as! UITabBarController
@@ -100,7 +90,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 }
 
 
-//MARK: Alert Controllerm
+//MARK: Alert Controller
 extension ViewController {
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

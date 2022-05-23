@@ -13,6 +13,7 @@ struct User {
     let password : String
     let person : Person
     
+    //MARK: get data from model
     static func getUserData() -> User {
         User(login: "user",
              password: "password",
